@@ -20,14 +20,16 @@
     <br>
 
     <div class="container">
-        <% resultado.forEach((productos)=>{ %>
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title"> <%= productos.titulo %> </h5>
-                <p class="card-text"> <%= productos.autor %> </p>
-            </div>
-            <a href="/detalle/<%= productos.id %>" class="btn btn-primary" type="button">VER DETALLE</a>
-        </div>
+      <a href="/create" class="btn btn-success">Agregar Producto</a>
+
+      <% resultado.forEach((productos)=>{ %>
+      <div class="card">
+          <div class="card-body">
+              <h5 class="card-title"> <%= productos.titulo %> </h5>
+              <p class="card-text"> <%= productos.autor %> </p>
+          </div>
+          <a href="/detalle/<%= productos.id %>" class="btn btn-primary" type="button">VER DETALLE</a>
+      </div>
         <% }) %>
         
 
